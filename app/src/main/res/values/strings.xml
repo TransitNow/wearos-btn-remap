@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">JSyntax Button Remap</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Enable remap in accessibility settings for this to work.</string>
+    <string name="accessibility_service_description">This service minimizes the Wallet app and opens Google Assistant Go whenever the former is launched.</string>
+</resources>
