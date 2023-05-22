@@ -15,14 +15,14 @@ public class MyAccessibilityService extends AccessibilityService {
 
     @Override
     public void onAccessibilityEvent(AccessibilityEvent event) {
-//        Log.d("MyAccessibilityService", String.format(
-//                "Package: %s%nClass: %s%nAction: %d%nEvent: %s%nContent Description: %s",
-//                event.getPackageName(),
-//                event.getClassName(),
-//                event.getAction(),
-//                event.toString(),
-//                event.getContentDescription()
-//        ));
+        Log.d("MyAccessibilityService", String.format(
+                "Package: %s%nClass: %s%nAction: %d%nEvent: %s%nContent Description: %s",
+                event.getPackageName(),
+                event.getClassName(),
+                event.getAction(),
+                event.toString(),
+                event.getContentDescription()
+        ));
 
         if (!event.getPackageName().equals("com.google.android.apps.walletnfcrel")) {
             return;
