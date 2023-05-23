@@ -41,7 +41,7 @@ public class AccessibilityWalletOverrideLauncherService extends AccessibilitySer
 //        i.setClassName("com.amazon.dee.alexaonwearos", "com.amazon.dee.alexaonwearos.MainActivity");
         Intent i = new Intent();
         i.setClassName("com.google.android.clockwork.flashlight", "com.google.android.clockwork.flashlight.FlashlightActivity");
-        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK); // Corrected line
+        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i);
 
 
