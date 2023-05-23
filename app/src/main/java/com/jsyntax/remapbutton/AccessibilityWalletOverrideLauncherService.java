@@ -1,14 +1,13 @@
 package com.jsyntax.remapbutton;
 
 import android.accessibilityservice.AccessibilityService;
-import android.app.ActivityManager;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
 import android.view.accessibility.AccessibilityEvent;
 
-public class MyAccessibilityService extends AccessibilityService {
+public class AccessibilityWalletOverrideLauncherService extends AccessibilityService {
     private static final int DEBOUNCE_TIME = 3000; // debounce time in milliseconds
     private boolean isDebounced = false;
     private final Handler handler = new Handler(Looper.getMainLooper());
@@ -38,10 +37,15 @@ public class MyAccessibilityService extends AccessibilityService {
         startHomeScreen.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(startHomeScreen);
 
+//        i.setClassName("com.google.android.apps.assistant", "com.google.android.apps.assistant.go.MainActivity");
+//        i.setClassName("com.google.android.clockwork.flashlight", "com.google.android.clockwork.flashlight.FlashlightActivity");
+//        i.setClassName("com.amazon.dee.alexaonwearos", "com.amazon.dee.alexaonwearos.AlexaTileAppService");
         Intent i = new Intent();
-        i.setClassName("com.google.android.apps.assistant", "com.google.android.apps.assistant.go.MainActivity");
-        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        i.setClassName("com.google.android.clockwork.flashlight", "com.google.android.clockwork.flashlight.FlashlightActivity");
+//        i.setClassName("com.amazon.dee.alexaonwearos", "com.amazon.dee.alexaonwearos.MainActivity");
+        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK); // Corrected line
         startActivity(i);
+
 
         handler.postDelayed(() -> isDebounced = false, DEBOUNCE_TIME);
     }
