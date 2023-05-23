@@ -14,14 +14,14 @@ public class AccessibilityWalletOverrideLauncherService extends AccessibilitySer
 
     @Override
     public void onAccessibilityEvent(AccessibilityEvent event) {
-        Log.d("MyAccessibilityService", String.format(
-                "Package: %s%nClass: %s%nAction: %d%nEvent: %s%nContent Description: %s",
-                event.getPackageName(),
-                event.getClassName(),
-                event.getAction(),
-                event.toString(),
-                event.getContentDescription()
-        ));
+//        Log.d("MyAccessibilityService", String.format(
+//                "Package: %s%nClass: %s%nAction: %d%nEvent: %s%nContent Description: %s",
+//                event.getPackageName(),
+//                event.getClassName(),
+//                event.getAction(),
+//                event.toString(),
+//                event.getContentDescription()
+//        ));
 
         if (!event.getPackageName().equals("com.google.android.apps.walletnfcrel")) {
             return;
@@ -38,11 +38,9 @@ public class AccessibilityWalletOverrideLauncherService extends AccessibilitySer
         startActivity(startHomeScreen);
 
 //        i.setClassName("com.google.android.apps.assistant", "com.google.android.apps.assistant.go.MainActivity");
-//        i.setClassName("com.google.android.clockwork.flashlight", "com.google.android.clockwork.flashlight.FlashlightActivity");
-//        i.setClassName("com.amazon.dee.alexaonwearos", "com.amazon.dee.alexaonwearos.AlexaTileAppService");
+//        i.setClassName("com.amazon.dee.alexaonwearos", "com.amazon.dee.alexaonwearos.MainActivity");
         Intent i = new Intent();
         i.setClassName("com.google.android.clockwork.flashlight", "com.google.android.clockwork.flashlight.FlashlightActivity");
-//        i.setClassName("com.amazon.dee.alexaonwearos", "com.amazon.dee.alexaonwearos.MainActivity");
         i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK); // Corrected line
         startActivity(i);
 

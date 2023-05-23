@@ -18,6 +18,7 @@
             >
             <intent-filter>
                 <action android:name="android.intent.action.VOICE_ASSIST" />
+<!--                <action android:name="android.intent.action.ALL_APPS" />-->
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
             </intent-filter>
