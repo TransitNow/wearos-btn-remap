@@ -1,3 +1,4 @@
 <resources>
-    <string name="hello_world">Go to Settings > Accessibility and enable this app.</string>
+    <string name="how_to">Tap top button for flash light or keep as recent apps. Long press for voice assistant. OPTIONAL: To bind Wallet shortcut (double-tap) to an app, you need to enable accessibility permissions under settings. </string>
+    <string name="accessibility_service_description">This service minimizes the Wallet app and opens Flash app whenever the former is launched.</string>
 </resources>
