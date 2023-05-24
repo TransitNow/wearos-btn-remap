@@ -1,6 +1,8 @@
 # Wear OS Button Remapper
 
-This Android app remaps the long-press action on a Wear OS watch to Google Assistant Go (GAG) and the double-tap action to another app.
+This Android app remaps the long-press action (crown button) or single press (top button) on a Wear OS watch to Google Assistant Go (GAG).
+
+Optional: Enabling accessbility permissions allows for a 3rd option, double tap top button which will override Google Wallet app (in case you don't use Wallet)
 
 
 ## Installation
