@@ -37,10 +37,10 @@ public class AccessibilityWalletOverrideLauncherService extends AccessibilitySer
         startHomeScreen.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(startHomeScreen);
 
-//        i.setClassName("com.google.android.apps.assistant", "com.google.android.apps.assistant.go.MainActivity");
-//        i.setClassName("com.amazon.dee.alexaonwearos", "com.amazon.dee.alexaonwearos.MainActivity");
         Intent i = new Intent();
-        i.setClassName("com.google.android.clockwork.flashlight", "com.google.android.clockwork.flashlight.FlashlightActivity");
+//        i.setClassName("com.google.android.apps.assistant", "com.google.android.apps.assistant.go.MainActivity");
+        i.setClassName("com.amazon.dee.alexaonwearos", "com.amazon.dee.alexaonwearos.MainActivity");
+//        i.setClassName("com.google.android.clockwork.flashlight", "com.google.android.clockwork.flashlight.FlashlightActivity");
         i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i);
 
