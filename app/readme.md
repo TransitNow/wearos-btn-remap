@@ -18,6 +18,10 @@ adb shell dumpsys package <package_name> | findstr  versionName
 adb shell dumpsys package com.google.android.apps.searchlite | findstr versionName
 adb shell dumpsys package package:de.stocard.stocard | findstr versionName
 adb shell dumpsys package com.google.android.apps.assistant | findstr versionName
+adb shell dumpsys package com.google.android.apps.fitness | findstr versionName
+adb shell dumpsys package com.facebook.mlite | findstr versionName
+adb install "...\wear os apks\com.facebook.mlite_338.0.0.3.102-436638495_minAPI14(armeabi-v7a)(120,160dpi)_apkmirror.com.apk"
+adb install "...\wear os apks\com.facebook.orca_121.0.0.13.70-60338733_minAPI24(nodpi)_apkmirror.com (1).apk"
 
 # APK version
 GAG2.8 is at .armeabi-v7a.release
