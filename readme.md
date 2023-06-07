@@ -1,9 +1,12 @@
 # Wear OS Button Remapper
 See video https://youtu.be/lqnD2iWeQBI
+![image](https://github.com/TransitNow/wearos-btn-remap/assets/2457368/bdd89b4d-d3c3-4a67-ab61-ee3f63a2b7a9)
 
-This Wear OS app remaps the long-press action (crown button) or single press (top button) on a Wear OS watch to Google Assistant Go (GAG).
 
-Optional: Enabling accessibility permissions allows for a 3rd option, double tap top button which will override Google Wallet app (in case you don't use Wallet)
+This Wear OS app remaps
+- long-press action (crown button) to Google Assistant Go (GAG) 
+- single press (top button) on a Wear OS watch for Flashlight
+- double tap (top button). Enabling accessibility permissions allows for a 3rd option, double tap top button which will override Google Wallet app (in case you don't use Wallet)
 
 Tested devices: TicWatch Pro 5
 
