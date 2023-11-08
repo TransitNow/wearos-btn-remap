@@ -8,7 +8,7 @@ This Wear OS app remaps
 - single press (top button) on a Wear OS watch for Flashlight
 - double tap (top button). Enabling accessibility permissions allows for a 3rd option, double tap top button which will override Google Wallet app (in case you don't use Wallet)
 
-Tested devices: TicWatch Pro 5
+Tested devices: TicWatch Pro 5, TicWatch Pro 3
 
 ## Installation
 Visit https://github.com/TransitNow/wearos-btn-remap/releases/tag/v0.0.01 and download the apk on to your phone
