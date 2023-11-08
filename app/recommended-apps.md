@@ -1,4 +1,7 @@
 ## Apps I recommend
+### Alexa for Wear OS (good substitute for Google Assistant Go or supplementary)
+https://apk.support/download-app/com.amazon.dee.alexaonwearos/1199970/2.0.1877.0
+
 ### Messenger Notifications
 - com.facebook.orca_121.0.0.13.70-60338733_minAPI24(nodpi)_apkmirror.com.apk
 ### Messenger Lite
